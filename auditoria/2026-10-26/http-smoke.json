@@ -1,0 +1,30 @@
+{
+  "login_page": 200,
+  "csrf_missing": 419,
+  "authenticated_dashboard": true,
+  "security_headers": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
+  },
+  "cookies": [
+    {
+      "name": "XSRF-TOKEN",
+      "secure": false,
+      "http_only": false,
+      "same_site": "strict"
+    },
+    {
+      "name": "diente-feliz-session",
+      "secure": false,
+      "http_only": true,
+      "same_site": "strict"
+    }
+  ],
+  "/modules/patients": 200,
+  "/modules/patients/1?view=advanced": 200,
+  "/reports": 200,
+  "/help": 200,
+  "/clinic.css": 200,
+  "logout_returns_login": true
+}

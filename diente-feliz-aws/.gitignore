@@ -1,0 +1,13 @@
+/.env
+/.env.*
+!/.env.example
+!/.env.aws.example
+/vendor/
+/node_modules/
+/certs/*.pem
+/storage/**
+/bootstrap/cache/*.php
+/.phpunit*
+/*.zip
+/*.dump
+/*.sql

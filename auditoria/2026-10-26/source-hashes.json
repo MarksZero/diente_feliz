@@ -1,0 +1,122 @@
+[
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Console\\Commands\\SendClinicMessages.php",
+    "Hash": "0A33EE46FAB643224E07A0CBF99A77AC6C8268D1DE44FAF44BAF451BF0D3EBE8"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Http\\Controllers\\AdminController.php",
+    "Hash": "470A5D773F3E0B5CF0347B0B81BF4D84C24CC61C1316C093CAD1DBA6BB45AB7A"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Http\\Controllers\\AuthController.php",
+    "Hash": "D2C720BF380BFC9B151189D72EC26A93AF0366799B3CC7A671D78F9E31B336E8"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Http\\Controllers\\ClinicController.php",
+    "Hash": "425028142BF9DB8A8ADD78DC721BD9AF9254E333028DE01A81069915D0FE9F54"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Http\\Controllers\\Controller.php",
+    "Hash": "25D1C1EF8E6CC8A376553FAACFBA2B07D9DFAEE9BDBB84F14F77517580E9DEB1"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Http\\Middleware\\EnabledUser.php",
+    "Hash": "B0EE014656533CFC915F5FC96F5066CF51977850B7A95B7A37467596F8518081"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Http\\Middleware\\SecurityHeaders.php",
+    "Hash": "569241894B7F01551DB814622DDEA2B8E2D0D9784C457FDC219B9C82BD157503"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Models\\Branch.php",
+    "Hash": "FD700E536BC740F1C2856565CF3234037BABCA713209F730BD9C10392251B32E"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Models\\Record.php",
+    "Hash": "D50FAFF2E85574253F98EB0C2750566B3DF0CE1A4D3B909B62DF71B353CCBDBC"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Models\\Role.php",
+    "Hash": "E1FDA4C5CFCCA62C843488A9D7A37608166BF0E5D0F26F032A0D554A286E0383"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Models\\User.php",
+    "Hash": "7955AA92A506A2CD631C889F348F0FF25BA68DC32B02F94E731717BED9EFCB88"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Policies\\RecordPolicy.php",
+    "Hash": "55767EF3585C2701326E74F007E7BDA3832E318BFF39557F90B3DF2C16456767"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Providers\\AppServiceProvider.php",
+    "Hash": "A7DA7B11A12276F49D7647B221A64A2D6FD8579F0035C4CA753666C0140071FF"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Services\\Audit.php",
+    "Hash": "1FB5B1A909CFA09C04626FE5CD93C2483E20FF005C30EE055DBE79DC5E4320E2"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Services\\Clinic.php",
+    "Hash": "2316D4AC9BD2266D0F5AF26CB0FC711F8425D38B9EC49A17346505DFFCB9EB26"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\app\\Services\\Modules.php",
+    "Hash": "1779A2C627F2B53FE754849F2089A0C9296FC26E53859874FF3C52A75F462C14"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\routes\\console.php",
+    "Hash": "410E9B53E53940560DDF25F32C84E91E7925CEDBADE95DAB92CF6E6723CA295B"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\routes\\web.php",
+    "Hash": "9219A149853D9FC00012726D6575EA4691BF1E2E4634C7612C31B6A17ED1621D"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\database\\factories\\UserFactory.php",
+    "Hash": "50BDC543F1B09D1A57260BE55AD0E1A68AEE4B34F63E1109DC94D9BCD3080526"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\database\\migrations\\0001_01_01_000000_create_users_table.php",
+    "Hash": "10D79883BC08CE46510F9AD8B1830B4D06D586DC56AE2C8BAC3B3E491F69A90F"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\database\\migrations\\0001_01_01_000001_create_cache_table.php",
+    "Hash": "FBB4665E5A977E71DF4E74EC75B3C06CA4F17AD0DE7138FE9786639189978E77"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\database\\migrations\\0001_01_01_000002_create_jobs_table.php",
+    "Hash": "DF4910687180313A14A3F96A8BDDD808AE145ED1B107CD772CAF865C0DC2B746"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\database\\migrations\\2026_10_20_000001_create_clinic.php",
+    "Hash": "A8B694CA5A2BFE20F8EA9F8829C9D648D7D0A8CBBA849C94F59814302F7A7C00"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\database\\seeders\\ClinicSeeder.php",
+    "Hash": "DFC7A4A4D79E0BA75D7C101311F5820AA7C86A824EB9B715962878497A847BD7"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\database\\seeders\\DatabaseSeeder.php",
+    "Hash": "616BC16977AF0131495CEC03773A118E33C7B7257C531E365BAC5555D992BBAB"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\tests\\TestCase.php",
+    "Hash": "C7C209F5579C42647C1F7B2A79AC828E8B54AC62A98442045A6E94FA2C0D0EBC"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\tests\\Feature\\ClinicSecurityTest.php",
+    "Hash": "2557DABC1D678DB92FC93484E62058CE2C6D9C22E59606E672F953BFA8EE99C2"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\tests\\Feature\\ExampleTest.php",
+    "Hash": "46469A0F72021ECC1BBDBA1AD87CA3F9B4012AFCE25FB9B1669EB201418A1F10"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\tests\\Unit\\ExampleTest.php",
+    "Hash": "FFACAE5C1A2A44C809420AF5B3B404910DA1B12167D58764DAC6D10B8BA8CFAF"
+  },
+  {
+    "Path": "C:\\Users\\pablo\\.codex\\.chatgpt-projects\\g-p-6ad4feff27a4819194dbd53f0a39898e\\diente-feliz\\tests\\Unit\\FinanceTest.php",
+    "Hash": "5AEDFF5EAAED827F0C4A7DFF11ADF574F3B94564EC35D576FE1350EA55ABC452"
+  }
+]

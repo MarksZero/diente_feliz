@@ -1,0 +1,15 @@
+/vendor
+/node_modules
+/.env
+/.env.testing
+/storage/*.key
+/storage/app/private/*
+!/storage/app/private/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/bootstrap/cache/*.php
+/.phpunit.cache
+/public/build
+/public/hot
+/database/*.sqlite
+/test-results

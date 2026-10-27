@@ -1,0 +1,337 @@
+[
+  {
+    "path": "audit-original-tests.txt",
+    "bytes": 21314,
+    "sha256": "6F3B16707A86DC60EC972BCE1969437087FB614E52F655F7F5F96A011ECA248A"
+  },
+  {
+    "path": "audit-dependencies.json",
+    "bytes": 69,
+    "sha256": "F3A5B39ED8F5D2954BBE9EF6F2030D4F3B9594DCCA825E58C80A90F8DCA15B55"
+  },
+  {
+    "path": "audit-original-junit.xml",
+    "bytes": 148556,
+    "sha256": "85509AF593D4481ACA3168CA00BEADBE699BA942429564DFF3628DCEEF9A01AA"
+  },
+  {
+    "path": ".runtime/php.zip",
+    "bytes": 35103568,
+    "sha256": "DA68394F9193B7F6B89D0C76861A4034AE10EFEE7FD55A7255D8118C2ACF70D7"
+  },
+  {
+    "path": ".runtime/postgres.zip",
+    "bytes": 341325378,
+    "sha256": "4B8DB0930C38F6EF845DB919551DEDDA3B6B845AEB0927B3D79A6E8E9E4537CF"
+  },
+  {
+    "path": "php-releases.json",
+    "bytes": 25197,
+    "sha256": "3E4FDF4B7C1A67604D9B8A14D72508EF5C94697B13E38C7C6BA931A3627AE356"
+  },
+  {
+    "path": "diente-feliz/resources/views/welcome.blade.php",
+    "bytes": 72302,
+    "sha256": "BDB9BB7D2EECCEB3581E429545B6EC96014CCAB6D0AE83D4C52930E9A15F7D65"
+  },
+  {
+    "path": "diente-feliz/resources/css/app.css",
+    "bytes": 339,
+    "sha256": "02DB84E827E06D8349293E9797EB8D81465E109E91976775964C4BF873B6FAB5"
+  },
+  {
+    "path": "diente-feliz/resources/js/app.js",
+    "bytes": 3,
+    "sha256": "101EAD936A2281D53DCC064B7E2A2AB0D53B92EF3EF7B34B668673007895C860"
+  },
+  {
+    "path": "diente-feliz/package.json",
+    "bytes": 461,
+    "sha256": "023D511D768E05B69E8127E18AE0E3D4A2E91702E8DD82917C655E53E5908DE5"
+  },
+  {
+    "path": "diente-feliz/vite.config.js",
+    "bytes": 632,
+    "sha256": "F413E14379E2DB8B200C63A6326B925F6D47CC0DF458C77BFE188CFC23E8081F"
+  },
+  {
+    "path": "diente-feliz/.npmrc",
+    "bytes": 31,
+    "sha256": "E968D1D336604E9986EA31306A4D9E1442F4312FCA262F444384BAF928D6560E"
+  },
+  {
+    "path": "diente-feliz/.phpunit.result.cache",
+    "bytes": 3501,
+    "sha256": "056D85C537383085ACB5E024BCFAB4E559FBB2306BFCA61250DD41FF115AACBC"
+  },
+  {
+    "path": "diente-feliz/database/database.sqlite",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\079307755716303c6484742652e765d7.php",
+    "bytes": 5157,
+    "sha256": "B23231F01549F0BFED35DB7509030BDD9B51CC9655A4DA1F18776CC6B2F08BDE"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\095b69fb4683014ef2120ce75fde0353.php",
+    "bytes": 8484,
+    "sha256": "6BCBC26DCABB8AE369B32D1D088CF510E30B4C55EBABFA976820CB4846F0E15B"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\0b7bcbcad90428094f4e1010c9bdebe6.php",
+    "bytes": 1333,
+    "sha256": "012AF0D436AD2A290D7566617E572D4D9150717F2A82F89F62C404C94BFC7936"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\0d3c4740328214eeeca90b10f1a70f54.php",
+    "bytes": 3614,
+    "sha256": "AE1CA6904978039DCA59A45B8F8F9764E62F032F0DFC624977EEFFEE6239D854"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\1a787caa97965bd2d142673edb086c38.php",
+    "bytes": 1917,
+    "sha256": "4AD3983201649A14E4C87FE3261326342C88A34A61C7D3E8BB606A7CD7AC55B8"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\1b2a4be18975be09be45191f36348362.php",
+    "bytes": 500,
+    "sha256": "B5E5F96A404B705FBBFEA4CE18A485D61F1DE0DE7D744833E6E6765779516C2C"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\1e43c9230785cd93cf689bc8fa83dc7b.php",
+    "bytes": 492,
+    "sha256": "8D2F4769F240638C088063D8F7B28F5E121B48C7C688758CD7FBBD1AB5DB8460"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\1ec55f0946454b0eee9d5c1fd7e13571.php",
+    "bytes": 514,
+    "sha256": "249ED1A9221F9659AF6B631DBD2E667E6AC9E26152F70BACD412207EBDEFD13F"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\1f95cd17b59c5f462d3596a6d7f33f46.php",
+    "bytes": 492,
+    "sha256": "5EA3E1BDF65412D819E7D90893E247E6FEFF54FE8375309D4A2C6BE7F55BF738"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\1ffb20c7caa556c5fbb0a2fb31503205.php",
+    "bytes": 1695,
+    "sha256": "09F866CC1A2260A7CEF2F8853B76F1ADA4CC55806FDF6F63E0C57468D5393894"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\20a5a7cb0bd13ec1221c722b5d237758.php",
+    "bytes": 2495,
+    "sha256": "5CF8151B34F1012C20EEE2997A35C55EFE120338552CFABFBCCF0CFB17E553FC"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\2b26dab4c58728faf04b74de6a8a30aa.php",
+    "bytes": 4191,
+    "sha256": "061D2C7D279BE1A56018F1295B9237AB7311432B56516FBFFDF03BFE8D69FD33"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\2d2e34fffd7ecb7f14c4419d1a67dd9e.php",
+    "bytes": 9943,
+    "sha256": "D1903222B720DA603AD2635D13357EE873858D8DEAB82BDACD6DA33A0101D324"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\35b11795790c49f4458705c7a97140aa.php",
+    "bytes": 1218,
+    "sha256": "EAAC87FD31C5DC7D1D5CA63CE081D77ABC084C41F7087D9D18A6A1B0BDFE2942"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\3bd4c20f8deee053662ce4e063507cbf.php",
+    "bytes": 1218,
+    "sha256": "CB1E83E00905CF4ADDD36DE900994850A40F816F70EC994045028717036586EF"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\3c1fb15f5d4227de61cbfa709198a82e.php",
+    "bytes": 3501,
+    "sha256": "47F3036A1E0E41E6FF109819A36A02ADDA10FB845AC17A1185494807CC3C202E"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\41804c41664b5d40b81575ad225bcb07.php",
+    "bytes": 492,
+    "sha256": "A4CA030830656F4FC236626960053882C250F78BBB1882105FCDF704E4B03A86"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\46544d5b73deaa577bfd18290b0f793b.php",
+    "bytes": 3223,
+    "sha256": "E1EFD0980063827E51A86F44B195A5BEC48D98F2124F6B865B6CE9C565955671"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\489136c19e0c8ebf4009f068976f798b.php",
+    "bytes": 502,
+    "sha256": "DE37ECB9A09434FE3AAB40E7FAF5888D6F69345A0CC71CBF83A87A8B26DDB4D9"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\4beec564f31956bc1a19f3abf3f5930c.php",
+    "bytes": 4191,
+    "sha256": "63EC6A3E118AFCFED606CDDECD875F0BD16F1290442E42420BF98706BB108EBB"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\54baf2f9dd8f26e97ecb9281d3864702.php",
+    "bytes": 702,
+    "sha256": "63ADACDB5BAD9BAD439E034A28A1FDB623810239A5C08567D3036546769C88A3"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\5a6cd8a3c71065e9e9e3f078506bb594.php",
+    "bytes": 5004,
+    "sha256": "7AA59FAE958A1FCC23CDA2F5894ED458A33925D5E9B05D2DE032C5430A2D3C61"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\5db0cbc8b9537348e1430ac901364e1c.php",
+    "bytes": 3223,
+    "sha256": "F755FB815B188D7C479499A39AEEEEB2116CB77C87CEDC61EFA5C069529D4126"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\5f223b4ad0c4746ae3e0b29f7868cdfb.php",
+    "bytes": 486,
+    "sha256": "A649CBF99AE865B7C0EE00897D3E0003DDD0CC2FF86E2109BB016BB18CE8EA76"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\608742b74e78a69091c3b2ab76879498.php",
+    "bytes": 514,
+    "sha256": "8B279124F62CEC8949392F27AE62644832494D613A38390C2E71AD7BE56810B2"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\63332734b0799ac269111f30c7cb5a8a.php",
+    "bytes": 2229,
+    "sha256": "7A9B5E81A4E43838B31E8FD569D9833E0204121B4CDB5D6842D80934D1EF3C4D"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\6678fead25ebcb57797fe30d2e8d61b8.php",
+    "bytes": 2678,
+    "sha256": "02634CA7665943C81521279A17E0B1A73BEF98AE29F910D07978DD45DE9E5634"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\67feb998ae30aa933bfb7b96dbedd47f.php",
+    "bytes": 1476,
+    "sha256": "7E16B934C90D45E401238E6C39B5F6D5FDA01DCAB52BAF9BDAEF104F0249FB40"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\6b0dcaf66496c2db8d9f6c47b4a78883.php",
+    "bytes": 1917,
+    "sha256": "88B225DBA1599D8ACFB2AE3D1539C7960AC749A9245F68716F3D9CE290E50D63"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\75592b8de9e6191f3b8d45170c8d85aa.php",
+    "bytes": 1155,
+    "sha256": "03DB7D8FBDA72A79AB3362DA21B206C459E9DCAB04A3FDE1E4514CF6744713D8"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\830391c18557382439ac0700cfadd689.php",
+    "bytes": 5479,
+    "sha256": "9EEE63D62D2F452E2118F90648FAD5AF480C115B9249B90A742CF196BB171993"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\831311dd888d836571c20af6e0da63fa.php",
+    "bytes": 1520,
+    "sha256": "0A8F107A6BEB8A883D15B352AFB3B8356686A991B9DD45115F3D10608D7A2151"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\8d542a9cad8f252af7ca7ef25bb220e2.php",
+    "bytes": 8484,
+    "sha256": "E3CC061A381830762B685874399A3966FA0E8ACA2EDB1D3FDC54E0A7290AFB95"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\8e0264c4c5866da1225af4bb06e34c6a.php",
+    "bytes": 5253,
+    "sha256": "6B20BB080E353E7FB75CA1CFCC81B699F916A4A012BA6669C5A38042ACA1DB0A"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\91519d75c8035025e744c1df1cd0b43f.php",
+    "bytes": 1520,
+    "sha256": "0C6F2BBA60ACDA549E145EB26F57052D01D6C2FA935F4F70C1E0580C9E00A9CB"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\96672cf967d4056006f307dbd6151c13.php",
+    "bytes": 492,
+    "sha256": "B0A1594BD50C99E24A0975B1F1DB9E613C06EEA4BC77B6841B072C2B1DA7AD2A"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\9bfe5c20db006ec7b2dd12217447fcc4.php",
+    "bytes": 5479,
+    "sha256": "4A0C4F8F933DBC83F76E7B8E638C8FB891163D06A24AEC7C08D0929F1E0221EA"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\9ff278dda98cf307ab04a0f156ab92e1.php",
+    "bytes": 492,
+    "sha256": "BE47B36C9F8468FE35568EBCD91226370B1285666DE7D0046003E046D9A460F4"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\a4a62a5e47ab38f5a7353eee2952266d.php",
+    "bytes": 1305,
+    "sha256": "6C00CEC0DE0FA7CAE08730F119286A36ED11E1F6543436D67382D19E620AF8F2"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\ad239df731c85c53e1e1a65fcb8fc1c0.php",
+    "bytes": 486,
+    "sha256": "590F0EA2916DDCD47236783FA9553243F4BE3A498B0BA27EEB8CFE4195284ED2"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\c43b3733000ae1b929c71f7d565447aa.php",
+    "bytes": 6903,
+    "sha256": "8209E58008EBFF754D03FB763547868915DFE952B34216529F7F55A9F96ABB94"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\c745452ab2ea7f5323fc4a28f7f0edc5.php",
+    "bytes": 3614,
+    "sha256": "EABB087EE0BB1F3233F0AFC140B1BCE6EDB6D39DB3B58EFE4D8F2C7B532271D6"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\c8b0a278e5cee280dd113687ea123f56.php",
+    "bytes": 506,
+    "sha256": "5EED842135ED8A4465BDA0E772F53BEAEBAE1D9A20499F57D82A453187B3B4BF"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\d13acdad2469cf1a8bbd21d2e34074da.php",
+    "bytes": 2508,
+    "sha256": "2F2BDC7A095CE88F8E3B0544578CCD201919EDD5B7494273105EEC9CE2A48EDE"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\d1e7623afdfb099970c2a320aa8134c2.php",
+    "bytes": 702,
+    "sha256": "6B7D66DABB4C6F6AD29B5343F1A9D685B1B390C9697AD759E4876D5103F2E123"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\d599f53f66ff372dc75fc930c9b22e75.php",
+    "bytes": 1333,
+    "sha256": "A011555C58B1BD3756E71B2378CF7FD1BB2A2F88A45195B4CF46D48AE80E30E5"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\d8b3547197799bba282f05dc7a3b2647.php",
+    "bytes": 2229,
+    "sha256": "FB20AF72CF4FF2E47BE81D4B3D3B228747995CF39F38E446B4D974EE62CF0A83"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\dd07ae183b6e7a330c9286c8b531e118.php",
+    "bytes": 3501,
+    "sha256": "695908987CF733ECCE21B32E953A6D0737751F3A97FC13A375F7EBDA4B346EC7"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\e6c74eb5cb33d3cd7ebd4917c9ac1800.php",
+    "bytes": 2898,
+    "sha256": "C29543B38DCACAC07FD05EF262C21D28222838D6A1C8113BA1EE41F5CF004FD2"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\e9af4f074dfdd0481a35944ed34cfadd.php",
+    "bytes": 6903,
+    "sha256": "A859F4F4A106B0718F02688E314AD1983709E22CEBCE4ED567B88986B310F838"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\f2008d9bf5a653ff0015d86e29f0dd36.php",
+    "bytes": 72712,
+    "sha256": "8A8BAB56DD4FE0D47F590498DB2D5728C577A86620B6F3E68212C7BEC18E83AA"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\f2d38ffbcfdcb25b5e7ca91ae7e332b3.php",
+    "bytes": 1435,
+    "sha256": "D14BDE2E3030269E8BAB50C1369B36427F57D95783B607A3D3133DDB2B480475"
+  },
+  {
+    "path": "diente-feliz\\storage\\framework\\views\\f741460e6c81da232b1d4ab09b8d901b.php",
+    "bytes": 5157,
+    "sha256": "0C60A2ACB35D9D9354F2DD64B4B928E3A2D1CC5F827260359A97F09E4D783103"
+  }
+]

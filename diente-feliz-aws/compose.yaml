@@ -1,0 +1,62 @@
+name: diente-feliz
+x-app: &app
+  image: diente-feliz-app:local
+  build: .
+  env_file: .env
+  volumes:
+    - clinic_storage:/var/www/html/storage
+    - ./certs/global-bundle.pem:/run/certs/global-bundle.pem:ro
+  networks:
+    - clinic
+  security_opt:
+    - no-new-privileges:true
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+  app:
+    <<: *app
+    restart: unless-stopped
+  scheduler:
+    <<: *app
+    restart: unless-stopped
+    command: ["php", "artisan", "schedule:work"]
+    profiles: ["messages"]
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN:?Configura APP_DOMAIN en .env}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      clinic:
+        ipv4_address: 172.30.42.10
+    depends_on:
+      - app
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  clinic:
+    ipam:
+      config:
+        - subnet: 172.30.42.0/24
+
+volumes:
+  clinic_storage:
+  caddy_data:
+  caddy_config:

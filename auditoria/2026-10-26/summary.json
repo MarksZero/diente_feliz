@@ -1,0 +1,26 @@
+{
+  "full_suite": {
+    "passed": 4,
+    "errors": 17,
+    "tests": 21,
+    "assertions": 67
+  },
+  "isolated_feature_tests": {
+    "passed": 13,
+    "tests": 18,
+    "failed": 5
+  },
+  "characterization": {
+    "passed": 1,
+    "tests": 1,
+    "meaning": "Confirma defectos existentes; no valida correcciones",
+    "assertions": 15
+  },
+  "php_lint": {
+    "files": 30,
+    "syntax_errors": 0
+  },
+  "dependency_audit": "No advisories or abandoned packages reported",
+  "http": "See http-smoke.json",
+  "application_logic_changed": false
+}

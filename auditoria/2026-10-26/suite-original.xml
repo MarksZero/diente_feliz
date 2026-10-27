@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\phpunit.xml" tests="21" assertions="67" errors="17" failures="0" skipped="0" time="12.901818">
+    <testsuite name="Unit" tests="2" assertions="4" errors="0" failures="0" skipped="0" time="0.011363">
+      <testsuite name="Tests\Unit\ExampleTest" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.003882">
+        <testcase name="test_that_true_is_true" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Unit\ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.003882"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\FinanceTest" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Unit\FinanceTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.007481">
+        <testcase name="test_integer_clp_discount_rounding" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Unit\FinanceTest.php" line="6" class="Tests\Unit\FinanceTest" classname="Tests.Unit.FinanceTest" assertions="3" time="0.007481"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="19" assertions="63" errors="17" failures="0" skipped="0" time="12.890455">
+      <testsuite name="Tests\Feature\ClinicSecurityTest" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" tests="18" assertions="61" errors="17" failures="0" skipped="0" time="12.755312">
+        <testcase name="test_all_authorized_pages_and_forms_render" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="13" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="61" time="12.755312"/>
+        <testcase name="test_reception_cannot_access_clinical_data_or_admin" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="20" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_reception_cannot_access_clinical_data_or_admin&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 5))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_branch_scope_prevents_idor_and_exports" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="25" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_branch_scope_prevents_idor_and_exports&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 6))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_login_lockout_and_hashes" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="30" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_login_lockout_and_hashes&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 7))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_login_logout_and_security_headers" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="35" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_login_logout_and_security_headers&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 8))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_disabled_and_revoked_sessions_are_rejected" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="40" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_disabled_and_revoked_sessions_are_rejected&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 9))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_clinical_text_is_encrypted_and_xss_is_escaped" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="46" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_clinical_text_is_encrypted_and_xss_is_escaped&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 10))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_mass_assignment_and_sql_injection_cannot_escalate" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="52" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_mass_assignment_and_sql_injection_cannot_escalate&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 11))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_role_specific_comments_are_enforced" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="59" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_role_specific_comments_are_enforced&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 12))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_appointments_validate_duration_availability_and_overlaps" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="66" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_appointments_validate_duration_availability_and_overlaps&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 13))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_postgres_rejects_direct_overlapping_insert" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="73" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_postgres_rejects_direct_overlapping_insert&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 14))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_partial_payments_refunds_and_replay_protection" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="77" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_partial_payments_refunds_and_replay_protection&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 15))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_payment_must_match_patient" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="89" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_payment_must_match_patient&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 16))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_secure_file_upload_download_and_forbidden_content" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="92" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_secure_file_upload_download_and_forbidden_content&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 17))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_consents_are_immutable_and_templates_versioned" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="103" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_consents_are_immutable_and_templates_versioned&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 18))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_financial_records_generate_audit_and_no_plain_password" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="111" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_financial_records_generate_audit_and_no_plain_password&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 19))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_csv_formula_injection_is_neutralized" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="116" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_csv_formula_injection_is_neutralized&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 20))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+        <testcase name="test_user_multiple_roles_and_temporary_disable" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php" line="121" class="Tests\Feature\ClinicSecurityTest" classname="Tests.Feature.ClinicSecurityTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ClinicSecurityTest::test_user_multiple_roles_and_temporary_disable&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  insert or update on table "branch_user" violates foreign key constraint "branch_user_branch_id_foreign"
+DETAIL:  Key (branch_id)=(1) is not present in table "branches". (Connection: pgsql, Host: 127.0.0.1, Port: 55432, Database: diente_feliz_test, SQL: insert into "branch_user" ("branch_id", "user_id") values (1, 21))
+&#13;
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:864
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:597
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Connection.php:561
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:4231
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:344
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:242
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable.php:134
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\ClinicSeeder.php:24
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:59
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\database\seeders\DatabaseSeeder.php:20
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:184
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasEvents.php:456
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\WithoutModelEvents.php:17
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Seeder.php:191
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:89
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\GuardsAttributes.php:188
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Database\Console\Seeds\SeedCommand.php:88
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Util.php:43
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:96
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:35
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Container\Container.php:803
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:292
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Command\Command.php:285
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Command.php:261
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:1129
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:380
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\symfony\console\Application.php:219
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Console\Application.php:165
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php:450
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:452
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Testing\PendingCommand.php:676
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithConsole.php:85
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase.php:410
+C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ClinicSecurityTest.php:11</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ExampleTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.135143">
+        <testcase name="test_the_application_returns_a_successful_response" file="C:\Users\pablo\.codex\.chatgpt-projects\g-p-6ad4feff27a4819194dbd53f0a39898e\diente-feliz\tests\Feature\ExampleTest.php" line="13" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="2" time="0.135143"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

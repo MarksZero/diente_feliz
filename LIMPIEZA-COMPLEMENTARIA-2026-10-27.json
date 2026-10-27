@@ -1,0 +1,17 @@
+[
+  {
+    "path": ".runtime/pgsql/pgAdmin 4",
+    "bytes": 719589878.0,
+    "reason": "Herramientas opcionales sin uso o caché regenerable"
+  },
+  {
+    "path": ".runtime/pgsql/StackBuilder",
+    "bytes": 770601.0,
+    "reason": "Herramientas opcionales sin uso o caché regenerable"
+  },
+  {
+    "path": ".runtime/composer-home/cache",
+    "bytes": 28740709.0,
+    "reason": "Herramientas opcionales sin uso o caché regenerable"
+  }
+]
